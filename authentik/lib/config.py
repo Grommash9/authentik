@@ -368,9 +368,9 @@ def django_db_config(config: ConfigLoader | None = None) -> dict:
         "default": {
             "ENGINE": "authentik.root.db",
             "HOST": config.get("postgresql.host"),
-            "NAME": config.get("postgresql.name"),
-            "USER": config.get("postgresql.user"),
-            "PASSWORD": config.get("postgresql.password"),
+            "NAME": "authentik",
+            "USER": "admin_auth",
+            "PASSWORD": "securepassword",
             "PORT": config.get("postgresql.port"),
             "OPTIONS": {
                 "sslmode": config.get("postgresql.sslmode"),

@@ -20,9 +20,9 @@ def check_postgres():
             sysexit(1)
         try:
             conn = connect(
-                dbname=CONFIG.refresh("postgresql.name"),
-                user=CONFIG.refresh("postgresql.user"),
-                password=CONFIG.refresh("postgresql.password"),
+                dbname="authentik",
+                user="admin_auth",
+                password="securepassword",
                 host=CONFIG.refresh("postgresql.host"),
                 port=CONFIG.get_int("postgresql.port"),
                 sslmode=CONFIG.get("postgresql.sslmode"),

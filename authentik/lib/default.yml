@@ -16,11 +16,11 @@
 # @see {@link ../../website/docs/install-config/configuration/configuration.mdx Configuration documentation} for more information.
 
 postgresql:
-  host: localhost
+  host: 192.168.0.20
   name: authentik
-  user: authentik
+  user: admin_auth
   port: 5432
-  password: "env://POSTGRES_PASSWORD"
+  password: "securepassword"
   use_pool: False
   test:
     name: test_authentik
