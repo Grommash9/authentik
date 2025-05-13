@@ -14,6 +14,11 @@ nvm use 20
 
 make web-build
 
-docker build -t authentik-with-uk:2025.4.0.9 .
-docker tag authentik-with-uk:2025.4.0.9 prudnikov21/authentik-with-uk:2025.4.0.9
-docker push prudnikov21/authentik-with-uk:2025.4.0.9
+python manage.py compilemessages
+
+
+
+
+docker build -t authentik-with-uk:2025.4.0.10 .
+docker tag authentik-with-uk:2025.4.0.10 prudnikov21/authentik-with-uk:2025.4.0.10
+docker push prudnikov21/authentik-with-uk:2025.4.0.10

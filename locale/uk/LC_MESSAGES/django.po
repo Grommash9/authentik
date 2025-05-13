@@ -1295,7 +1295,7 @@ msgstr "Недійсний пароль."
 #: authentik/policies/password/models.py
 #, python-brace-format
 msgid "Password exists on {count} online lists."
-msgstr ""
+msgstr "Увага! Цей пароль виявлено у {count} списках скомпрометованих паролів. Оберіть інший пароль."
 
 #: authentik/policies/password/models.py
 msgid "Password is too weak."
